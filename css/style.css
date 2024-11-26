@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+:root {
+  --font-family: monospace;
+  --white-color: white;
+  --bg-color: #1f252c;
+  --text-color: #1f252c;
+  --button-color: #0aeafa;
+  --text1-hover: #0aeafa;
+  --text2-hover: #0afa26;
+  --text3-hover: #fa0afa;
+  --text4-hover: #f6fa0a;
+  --text5-hover: #fa9e0a;
+  --icon1-fill: #0aeafa;
+  --icon2-fill: #009dff;
+  --icon3-fill: #fa0afa;
+  --icon4-fill: #0afa26;
+  --box-bg: #0aeafa;
+  --box2-bg: #0adefa;
+  --box3-bg: #0ae2fa;
+  --img-hover: #0aeafa;
+  --blur-bg: #1f252cdb;
+}
+body {
+  background: var(--bg-color);
+}
+.nav {
+  width: 100%;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+.navbar {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.pages a {
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+  color: var(--white-color);
+  font-size: 16px;
+}
+.home:hover {
+  text-shadow: 0 0 10px var(--text1-hover);
+  color: var(--text1-hover);
+}
+.about:hover {
+  text-shadow: 0 0 10px var(--text2-hover);
+  color: var(--text2-hover);
+}
+.services:hover {
+  text-shadow: 0 0 10px var(--text3-hover);
+  color: var(--text3-hover);
+}
+.works:hover {
+  text-shadow: 0 0 10px var(--text4-hover);
+  color: var(--text4-hover);
+}
+.contact:hover {
+  text-shadow: 0 0 10px var(--text5-hover);
+  color: var(--text5-hover);
+}
+.logo {
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+  color: white;
+}
+.logo:hover {
+  color: var(--text1-hover);
+  text-shadow: 0 0 10px var(--text1-hover);
+}
+.menu_bar {
+  display: none;
+}
+/* ---------------------Section------------------- */
+.section {
+  color: var(--white-color);
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 180px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  color: #0aeafa;
+}
+.box {
+  position: fixed;
+  z-index: -1;
+  top: -20px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--box-bg);
+  filter: blur(132px);
+}
+.box2 {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 30%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--box2-bg);
+  filter: blur(200px);
+}
+.box3 {
+  position: fixed;
+  z-index: -1;
+  top: 40px;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--box3-bg);
+  filter: blur(152px);
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.instagram svg,
+.telegram svg,
+.facebook svg,
+.github svg {
+  cursor: pointer;
+  transition: fill 0.2s, filter 0.2s;
+}
+.instagram svg:hover {
+  fill: var(--icon3-fill);
+  filter: drop-shadow(0 0 5px var(--icon3-fill));
+}
+.telegram svg:hover {
+  fill: var(--icon4-fill);
+  filter: drop-shadow(0 0 5px var(--icon4-fill));
+}
+.facebook svg:hover {
+  fill: var(--icon2-fill);
+  filter: drop-shadow(0 0 5px var(--icon2-fill));
+}
+.github svg:hover {
+  fill: var(--icon1-fill);
+  filter: drop-shadow(0 0 5px var(--icon1-fill));
+}
+.section-left_part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.section-left_part h4 {
+  font-size: 30px;
+}
+.section-left_part h2 {
+  font-family: monospace;
+  font-size: 45px;
+}
+.section-left_part .h4 {
+  font-size: 25px;
+}
+.section-left_part p {
+  max-width: 500px;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: monospace;
+}
+.section-right_part img {
+  filter: drop-shadow(0 0 3px var(--img-hover));
+  width: 400px;
+}
+.btn {
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 20px;
+  transition: background 0.3s, color 0.2s;
+  padding: 10px 40px;
+  color: #0aeafa;
+  border: 2px solid #0aeafa;
+  box-shadow: 0 0 10px 1px #0aeafa;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.btn:hover {
+  background: var(--button-color);
+  color: var(--text-color);
+}
+.menu {
+  top: -500px;
+  width: 100%;
+  height: 500px;
+  transition: top 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  z-index: 1000;
+  backdrop-filter: blur(9px);
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.active_btn {
+  top: 0;
+}
