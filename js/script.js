@@ -20,3 +20,27 @@ menu_bar.addEventListener("click", () => {
 close.addEventListener("click", () => {
   menu.classList.remove("active_btn");
 });
+
+// Scroll---------------
+
+// Oxirgi skroll qiymatini saqlash
+let lastScrollY = window.scrollY;
+
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+
+  // Agar skroll pastga bo'lsa - transform qo'shiladi (yashirinadi)
+  if (window.scrollY > lastScrollY && window.scrollY >= 120) {
+    header.classList.add("transform");
+  }
+  // Agar skroll yuqoriga bo'lsa - transform olib tashlanadi (ko'rinadi)
+  else {
+    header.classList.remove("transform");
+  }
+
+  // Joriy skroll joylashuvini yangilash
+  lastScrollY = window.scrollY;
+};
+
+// Skroll eventini tinglash
+window.addEventListener("scroll", scrollHeader);
