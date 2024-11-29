@@ -258,7 +258,9 @@ body {
 .my_data {
   max-width: 1024px;
   margin: 0 auto;
+  color: white;
 }
+
 .hidden {
   display: none;
 }
