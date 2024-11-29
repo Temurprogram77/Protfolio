@@ -11,6 +11,20 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <iframe class="hidden" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <div class="box"></div>
     <div class="box2"></div>
     <div class="box3"></div>
@@ -21,11 +35,11 @@
                     Portfolio
                 </a>
                 <div class="pages">
-                    <a href="#" id="home" class="home">Home</a>
-                    <a href="#" id="about" class="about">About</a>
-                    <a href="#" id="services" class="services">Services</a>
-                    <a href="pages/works.html" id="works" class="works">Works</a>
-                    <a href="./pages/contact.html" id="contact" class="contact">Contact</a>
+                    <a href="#" class="home">Home</a>
+                    <a href="#about" class="about">About</a>
+                    <a href="#services" class="services">Services</a>
+                    <a href="pages/works.html" class="works">Works</a>
+                    <a href="./pages/contact.html" class="contact">Contact</a>
                 </div>
                 <div class="menu_bar" id="menu_bar">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
@@ -94,12 +108,29 @@
             </div>
         </div>
     </div>
-    <main>
-        <section>
-            
+    <main id="about">
+        <section class="my_data">
+            <h2>About</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ipsa voluptate recusandae dolorem soluta
+                enim quod accusantium corporis minus! Eligendi ut quod quisquam dolores aliquam pariatur impedit
+                voluptate fugit fugiat, similique architecto quidem aspernatur eos vero laborum nobis dolorum nostrum
+                magni dolore officiis. Amet obcaecati laudantium ab est, possimus hic distinctio quaerat fuga. Commodi
+                deserunt ad esse ipsa perferendis quo. Eius eaque quas fugit accusamus officiis velit cum eligendi,
+                error illo iure magni temporibus commodi ad ab aliquam harum incidunt quo tempore doloribus pariatur.
+                Placeat nihil architecto sed, deleniti saepe voluptatum! Molestiae quae in officiis aspernatur
+                consectetur eaque obcaecati magnam!
+            </p>
+            <img src="" alt="">
         </section>
     </main>
+    <script>
+        var loader = document.getElementById("preloader")
 
+        window.addEventListener("load", () => {
+            loader.style.display = "none"
+        })
+    </script>
     <script src="js/script.js"></script>
 </body>
 
