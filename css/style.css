@@ -265,8 +265,12 @@ body {
 .my_data {
   max-width: 1024px;
   display: flex;
+  align-items: center;
   margin: 0 auto;
   color: white;
+}
+.my_data img {
+  width: 500px;
 }
 .my_data h2 {
   margin-bottom: 10px;
